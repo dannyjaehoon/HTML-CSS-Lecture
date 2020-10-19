@@ -3,33 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Cafe - static layout</title>
+    <link rel="stylesheet" href="./css/test.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="top-nav">
                 <ul>
-                    <li class="top-nav-items">Home</li>
-                    <li class="top-nav-items">Sign In</li>
-                    <li class="top-nav-items">Sign Up</li>
-                    <li class="top-nav-items">Site Map</li>
-                    <li class="top-nav-items">English</li>
+                    <li class="top-nav-items"><a href="#">Home</a></li>
+                    <li class="top-nav-items"><a href="#">Sign In</a></li>
+                    <li class="top-nav-items"><a href="#">Sign Up</a></li>
+                    <li class="top-nav-items"><a href="#">Site Map</a></li>
+                    <li class="top-nav-items"><a href="#">English</a></li>
                 </ul>
             </div>
             <div class="bottom-nav">
                 <ul>
-                    <li class="bottom-nav-items"><img src="" alt=""></li>
-                    <li class="bottom-nav-items">About HTML</li>
-                    <li class="bottom-nav-items">About CSS</li>
-                    <li class="bottom-nav-items">Web Standard</li>
-                    <li class="bottom-nav-items">Web Accessibility</li>
-                    <li class="bottom-nav-items">FAQ</li>
-                    <li class="bottom-nav-items">Resource</li>
+                    <li class="bottom-nav-items"><img src="./images/logo.png" alt=""></li>
+                    <li class="bottom-nav-items active"><a href="#">About HTML</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Intro to HTML5</a></li>
+                            <li><a href="#">Intro to Reference</a></li>
+                            <li><a href="#">Examples</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="bottom-nav-items"><a href="#">About CSS</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Intro to CSS</a></li>
+                                <li><a href="#">CSS2 vs CSS#</a></li>
+                                <li><a href="#">CSS animation</a></li>
+                                <li><a href="#">CSS Framework</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bottom-nav-items"><a href="#">Web Standard</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Web standard</a></li>
+                                <li><a href="#">W3C</a></li>
+                                <li><a href="#">Current state of HTML5 </a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">Web Accessibility</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Intro to Accessibility</a></li>
+                                <li><a href="#">Understanding of disability</a></li>
+                                <li><a href="#">Laws for disadvantaged</a></li>
+                                <li><a href="#">Quality Mark</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">FAQ</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Ask && Answer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">One to One question</a></li>
+                                <li><a href="#">Web Accessibility</a></li>
+                                <li><a href="#">Web Standard</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">Info</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Open sources</a></li>
+                                <li><a href="#">Image resources</a></li>
+                                <li><a href="#">Web Accessibility</a></li>
+                                <li><a href="#">Web Standard</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="visual">Web Standards & Accessibility</div>
     </header>
+    <div class="visual">
+        <img src="./css/images/ani_flower_01.png" alt="first flower" class="first-flower">
+        <img src="./css/images/ani_flower_02.png" alt="second flower" class="second-flower">
+        <img src="./css/images/ani_flower_03.png" alt="third flower" class="third-flower">
+        <img src="./css/images/ani_flower_04.png" alt="fourth flower" class="fourth-flower">
+        <p>Web Standards & Accessibility</p> 
+    </div>
     <main>
         <section>
             <div class="sign-in">
@@ -63,33 +120,114 @@
             </div>
         </section>
         <section>
-            <div class="search">
+            <div class="search-section">
                 <p class="title"></p>
                 <form action="#">
-                    <input type="text" name="" id="">
+                    <input type="text" name="search" id="search">
                     <button type="submit">Search</button>
                 </form>
             </div>
+            <div class="info-section">
+                <div class="top">
+                    <p>FAQ</p>
+                    <p>Resources</p>
+                    <p class="display-on-right-side">More</p>
+                </div>
+                <div class="body">
+                    <ul class="faq-items">
+                        <li class="item1">Lorem ipsu</li><p>2018.05.31</p>
+                        <li class="item2">Lorem ipsu quae!</li><p>2018.05.31</p>
+                        <li class="item3">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item4">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item5">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                    </ul>
+                    <ul class="resources">
+                        <li class="item1">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item2">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item3">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item4">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item5">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="news-section">
+                <div class="top">
+                    <p>News</p>
+                    <p class="display-on-right-side">More</p>
+                </div>
+                <div class="body">
+                    <div class="left">
+                        <img src="#" alt="">
+                        <p>W3C Menual</p>
+                    </div>
+                    <div class="right">
+                        <p>W3C site is newly built</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quod ad pariatur modi ipsa, laborum quisquam ex autem quo perferendis provident beatae. Explicabo tempora sit natus porro quas nam beatae.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
-
+            <div class="new-event-section">
+                <div class="top">
+                    <p>New Events</p>
+                    <div class="buttons">
+                        <div class="previous"></div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+                <div class="body">
+                    <img src="#" alt="">
+                    <p></p>
+                </div>
+                <hr>
+                <div class="bottom">
+                    <label for="related-sites">Related sites</label>
+                    <select name="related-sites" id="related-sites">
+                        <option value="Multi Campus">Multi Campus</option>
+                        <option value="W3C">W3C</option>
+                        <option value="CSS ZenGarden">CSS ZenGarden</option>
+                        <option value="Web Accessiblity Research">Web Accessiblity Research</option>
+                        <option value="Web Standards">Web Standards</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popular-sites-section">
+                <div class="top">
+                    <p>News</p>
+                    <p class="display-on-right-side">More</p>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>W3C</li>
+                        <i></i>
+                        <li>CSS Zen Garden</li>
+                        <i></i>
+                        <li>MDN</li>
+                        <i>Web Standards</i>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <div class="slogan">
-            <img src="#" alt="">
-            <p><span>"</span>The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect. Tim Berners - Lee , W3C Director and inventor of the World Wide Web</p>
-        </div>
     </main>
+    <div class="slogan">
+        <img src="/css/images/coffee.png" alt="coffee image">
+        <p><span>"</span>The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect. Tim Berners - Lee , W3C Director and inventor of the World Wide Web</p>
+    </div>
     <footer>
         <div class="footer-wrapper">
-            <img src="#" alt="">
+            <img src="./images/footer_logo.png" alt="footer logo" class="footer-logo">
             <ul>
-                <li class="footer-nav-items">About Us</li>
-                <li class="footer-nav-items">Privacy</li>
-                <li class="footer-nav-items">Ban Collection Email Address</li>
-                <li class="footer-nav-items">Contact Us</li>
-                <li class="footer-nav-items">Site Map</li>
+                <li class="footer-nav-items"><a href="#">About Us</a></li>
+                <li class="footer-nav-items"><a href="#">Privacy</a></li>
+                <li class="footer-nav-items"><a href="#">Ban Collection Email Address</a></li>
+                <li class="footer-nav-items"><a href="#">Contact Us</a></li>
+                <li class="footer-nav-items"><a href="#">Site Map</a></li>
             </ul>
-            <img src="#" alt="">
+            <div class="img-group">
+                <img src="./images/html5_logo.png" alt="HTML5 logo">
+                <img src="./images/css3_logo.png" alt="CSS logo">
+            </div>
         </div>
         <div class="footer-bottom">
             <p>서울시 강남구 역삼동 718-5 전화 : 02-3429-5114 email : seulbinim@gmail.com</p>

@@ -1,0 +1,260 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%) repeat;
+    background-color: #ccc;
+}
+
+header
+{
+    background-color: white;
+    margin: auto;
+    width: 940px;
+    border-radius: 0 0 15px 15px;
+}
+nav {
+    padding: 0 30px 40px;
+}
+nav,
+.top-nav,
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.top-nav ul{
+    margin: 10px;
+}
+
+.top-nav ul,
+.bottom-nav ul {
+    display: flex;
+}
+
+.top-nav ul li,
+.bottom-nav ul li{
+    
+    list-style-type: none;
+}
+
+.top-nav ul li::after{
+    content: ":";
+}
+.top-nav ul li:last-child::after{
+    content: "";
+}
+
+.top-nav ul li a,
+.bottom-nav ul li a{
+    padding: 8px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.bottom-nav {
+    background: linear-gradient(to bottom, #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%);
+    background-color: #ed552f;
+    border-top:2px solid #222;
+    border-radius:  0 0 5px 5px;
+    height: 47px;
+    width: 100%;
+}
+
+.bottom-nav img {
+    width: 165px;
+    height: 35px;
+}
+.bottom-nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav ul li {
+    text-align: center; 
+    padding: 0 20px;
+    border-left: 2px solid rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+}
+.bottom-nav ul li:first-child {
+    border-left: initial;
+}
+
+.bottom-nav ul li:hover a {
+    text-decoration: black;
+}
+.bottom-nav ul li a{
+    color: white;
+    padding: 0;
+}
+
+.bottom-nav ul li:hover a, 
+.active a{ 
+    color: #ff0;
+}
+
+
+.sub-menu-1 {
+    display: none;
+    position: relative;
+}
+
+.bottom-nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 85px;
+    right: 550px;
+
+}
+
+.bottom-nav ul li:hover .sub-menu-1 ul li {
+    padding: 0;
+}
+.bottom-nav ul li:hover .sub-menu-1 ul li::before{
+    content:"\f00c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+
+.bottom-nav ul li:hover .sub-menu-1 ul li a{
+    color: black;
+}
+/* banner */
+@keyframes flowerEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  } 
+.visual {
+    width: 940px;
+    margin: auto;
+    height: 120px;
+    position: relative;
+}
+.visual img {
+    position: absolute;
+    animation-name: flowerEffect;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.visual .first-flower {
+    top: -10px;
+}
+.visual .second-flower {
+    top:8px;
+    left: 670px;
+}
+.visual .third-flower {
+    left: 300px;
+}
+.visual .fourth-flower {
+    top: 10px;
+    left: 800px;
+}
+.visual p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 51px;
+    left: 400px;
+    font-size: 1.5rem;
+    animation: textAni 2000ms forwards ease-in-out;
+}
+
+/* main */
+
+main {
+    width: 940px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* slogan */
+.slogan {
+    width: 940px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.slogan img {
+    position: absolute;
+    top: 25px;
+}
+.slogan p {
+    margin: 30px 130px 15px;
+    font-size: 14px;
+    color: #a09784;
+    line-height: 25px;
+
+}
+
+/* footer */
+footer {
+    background: linear-gradient(to bottom, #ccc, #eee 60%, #fff 100%);
+}
+footer img {
+    display: block;
+    width: 40px;
+    height: 60px;
+}
+footer .footer-logo {
+ width: 100px;
+ height: 20px;
+}
+
+footer .footer-wrapper {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 15px;
+}
+
+footer .footer-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7b8385;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px 20px;
+    padding: 0 20px;
+}
+footer .footer-wrapper .img-group {
+    display: flex;
+}
+footer .footer-wrapper ul li{
+    list-style-type: none;
+    padding: 8px 10px;
+}
+
+footer .footer-wrapper ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+footer .footer-bottom p {
+    margin: 0;
+}
