@@ -1,0 +1,20 @@
+/* use web font 
+    - noto sans
+    spoga han sans
+
+*/
+/* cdn - content delivery network */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+/* font-wegight : 100 / 300 / 400 / 700 */
+/* font format - woff2, ttf, otf, eot */
+@import url("normalize.css");
+@import url("fontello.css");
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+/* skip nav */
+.skip-nav {
+    display: none;
+}
