@@ -61,6 +61,46 @@ body {
     margin: auto;
     padding: 10px;
 }
+
+/* header */
+.header {
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 5px 0 #aaa;
+    overflow: hidden;
+    padding: 0;
+}
+
+.header .logo {
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    margin: 0;
+}
+.header .member {
+    float: right;
+    margin: 0;
+}
+
+.header .member li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 5px;
+    
+}
+.header .member li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+.header .member li:last-child a {
+    text-transform: uppercase;
+}
+.header .member li span{
+    padding-left: 10px;
+} 
+/* visual */
 .visual {
     height: 120px;
 }
