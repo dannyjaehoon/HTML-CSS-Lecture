@@ -10,11 +10,93 @@
 @import url("normalize.css");
 @import url("fontello.css");
 
+/* element -> computed -> search "font-size" -> 16px */
+html {
+    font-size: 10px;
+    
+}
+
+/*
+body * means that all elements existed under body tag will be selected
+the reason of affecting *::before and *::after 
+*/
+
+body *,body *::before,body *::after {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 1.4rem;
+    color: #181818;
+    background: #fff;
+    height: 2000px;
 }
 
 /* skip nav */
 .skip-nav {
     display: none;
+}
+
+/* layout */
+
+.header {
+    background: yellow;
+    width: 940px;
+}
+.visual {
+    background: lime;
+}
+.main {
+    background: skyblue;
+}
+.slogan {
+    background: orange;
+}
+
+.header,
+.visual,
+.main,
+.slogan {
+    width: 940px;
+    margin: auto;
+    padding: 10px;
+}
+.visual {
+    height: 120px;
+}
+.main {
+    padding: 30px;
+    /* overflow: hidden; */
+    /* min-height: 450px; */
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.main .group {
+    height: 200px;
+}
+.main .group1 {
+    float: left;
+    width: 250px;
+    margin-right: 15px;
+    background-color: blue;
+}
+.main .group2 {
+    float: left;
+    width: 380px;
+    margin: 0 15px;
+    background-color: blueviolet;
+}
+.main .group3 {
+    float: right;
+    width: 190px;
+    background-color: yellow;
+}
+
+
+
+.footer {
+    background: pink
 }

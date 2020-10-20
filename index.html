@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Web Cafe - static layout</title>
     <link rel="stylesheet" href="./css/test.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
@@ -88,19 +89,28 @@
         <p>Web Standards & Accessibility</p> 
     </div>
     <main>
-        <section>
+        <section class="first-main-section">
             <div class="sign-in">
                 <div class="title">Sign In</div>
                 <form class="input-area">
-                    <label for="id">ID</label>
-                    <input type="text" id="id">
-                    <label for="password">Password</label>
-                    <input type="text" id="password">
-                    <button type="submit">Sign In</button>
-                    <hr>
-                    <div class="sign-up">Sign Up</div>
-                    <div class="forget-pw">Forget Password</div>
+                    <fieldset>
+                        <div class="input-fields">
+                            <div class="form-field-id">
+                                <label for="id">ID</label>
+                                <input type="text" id="id">
+                            </div>
+                            <div class="form-field-pw">
+                                <label for="password">PW</label>
+                                <input type="text" id="password">
+                            </div>
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </fieldset>
                 </form>
+                <div class="sign-up-forget-pw-box">
+                    <div class="sign-up"><a href="#">Sign Up</a></div>
+                    <div class="forget-pw"><a href="#">Forget Password</a></div>
+                </div>
             </div>
             <div class="links">
                 <div class="link-to-markup-validation">
@@ -113,74 +123,74 @@
             <div class="info-display">
                 <div class="title">WEB Terms</div>
                 <div class="description">
-                    <img src="" alt="">
-                    <a href="#">What is Web standard?</a>
-                    <p>W3C is .....</p>
+                    <img src="./images/web_standards.gif" alt="Web standard logo">
+                    <div class="text-group">
+                        <p>What is Web standard?</p>
+                        <p>W3C is .....</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="second-main-section">
             <div class="search-section">
-                <p class="title"></p>
                 <form action="#">
-                    <input type="text" name="search" id="search">
+                    <label for="search">Search</label>
+                    <input type="text" name="search" placeholder="Please input your ..." id="search">
                     <button type="submit">Search</button>
                 </form>
             </div>
             <div class="info-section">
                 <div class="top">
-                    <p>FAQ</p>
+                    <p class="click">FAQ</p>
                     <p>Resources</p>
-                    <p class="display-on-right-side">More</p>
+                    <p>More</p>
                 </div>
                 <div class="body">
                     <ul class="faq-items">
-                        <li class="item1">Lorem ipsu</li><p>2018.05.31</p>
-                        <li class="item2">Lorem ipsu quae!</li><p>2018.05.31</p>
-                        <li class="item3">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item4">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item5">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item1">Lorem ipsu<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsu quae!<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
                     </ul>
                     <ul class="resources">
-                        <li class="item1">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item2">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item3">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item4">Lorem ipsuam, cum?</li><p>2018.05.31</p>
-                        <li class="item5">Lorem ipsuam, cum?</li><p>2018.05.31</p>
+                        <li class="item1">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
                     </ul>
                 </div>
             </div>
             <div class="news-section">
                 <div class="top">
                     <p>News</p>
-                    <p class="display-on-right-side">More</p>
+                    <p>More</p>
                 </div>
                 <div class="body">
                     <div class="left">
-                        <img src="#" alt="">
+                        <img src="./images/news.gif" alt="news image">
                         <p>W3C Menual</p>
                     </div>
                     <div class="right">
                         <p>W3C site is newly built</p>
+                        <p>2018.05.31</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quod ad pariatur modi ipsa, laborum quisquam ex autem quo perferendis provident beatae. Explicabo tempora sit natus porro quas nam beatae.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="thrid-main-section">
             <div class="new-event-section">
                 <div class="top">
-                    <p>New Events</p>
-                    <div class="buttons">
-                        <div class="previous"></div>
-                        <div class="next"></div>
-                    </div>
+                    <p>New <span>Events</span></p>
+                    <img src="./css/images/back_forward.png" alt="">
                 </div>
                 <div class="body">
-                    <img src="#" alt="">
-                    <p></p>
+                    <img src="./images/free_gift.gif" alt="free gift image">
+                    <p>Newly published!!! Web Standard Guide 2!</p>
+                    <p>Will be free for the first 500 people.</p>
                 </div>
-                <hr>
                 <div class="bottom">
                     <label for="related-sites">Related sites</label>
                     <select name="related-sites" id="related-sites">
@@ -195,7 +205,7 @@
             <div class="popular-sites-section">
                 <div class="top">
                     <p>News</p>
-                    <p class="display-on-right-side">More</p>
+                    <p>More</p>
                 </div>
                 <div class="body">
                     <ul>
