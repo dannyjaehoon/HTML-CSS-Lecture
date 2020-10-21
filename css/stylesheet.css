@@ -58,7 +58,7 @@ body {
 .main,
 .slogan {
     width: 940px;
-    margin: auto;
+    margin: 0  auto;
     padding: 10px;
 }
 
