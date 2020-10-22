@@ -11,13 +11,15 @@
 @import url("fontello.css");
 
 /* hidden content css */
-.a11y-hidden {
+.a11y-hidden, legend {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: 0;
     overflow: hidden;
     clip-path: polygon(0 0,0 0, 0 0);
+    clip: rect(0 0 0 0);
+    clip: rect(0,0,0,0);
 }
 
 /* clear float */
@@ -286,7 +288,75 @@ body {
     float: left;
     width: 250px;
     margin-right: 15px;
-    background-color: blue;
+}
+.main .group1 section .login {
+    background: radial-gradient(circle at right top, #e8852e, #ed552f);
+    box-shadow: 5px 5px 0 #aaa;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main .group1 section .login h2 {
+    color: #ff0;
+    margin:0;
+    text-indent: 10px;
+}
+
+.main .group1 section .login .login-form {
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0 10px;
+    position: relative;
+}
+.main .group1 section .login .login-form .input-group{
+    padding: 10px 0;
+    border:0;
+    border-bottom: 1px solid black;
+}
+.main .group1 section .login .login-form .form-field-group{
+    display: flex;
+    margin: 0;
+}
+.main .group1 section .login .login-form .input-group .form-field-group:nth-child(2) label{
+    margin-right: 13px;
+}
+.main .group1 section .login .login-form .input-group .form-field-group:nth-child(3){
+
+    margin-top: 5px;
+}
+.main .group1 section .login .login-form .form-field-group input{
+    display: flex;
+    margin-left: 4px;
+    width: 90px;
+}
+
+.main .group1 section .login .login-form button{
+    position: absolute;
+    top:20px;
+    right: 10px;
+    background: tomato;
+    border: 0;
+    padding: 17px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.main .group1 section .login .remember {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 0;
+    padding: 10px 10px;
+}
+.main .group1 section .login .remember li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px; 
+}
+.main .group1 section .login .remember li span {
+    color: tomato
 }
 .main .group2 {
     float: left;
@@ -301,7 +371,7 @@ body {
 }
 
 
-
+/* footer */
 .footer {
     background: pink
 }
