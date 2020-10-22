@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Cafe - static layout</title>
+    <link rel="stylesheet" href="./scss/style.scss">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top-nav">
+                <ul>
+                    <li class="top-nav-items"><a href="#">Home</a></li>
+                    <li class="top-nav-items"><a href="#">Sign In</a></li>
+                    <li class="top-nav-items"><a href="#">Sign Up</a></li>
+                    <li class="top-nav-items"><a href="#">Site Map</a></li>
+                    <li class="top-nav-items"><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li class="bottom-nav-items"><img src="./images/logo.png" alt=""></li>
+                    <li class="bottom-nav-items active"><a href="#">About HTML</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Intro to HTML5</a></li>
+                            <li><a href="#">Intro to Reference</a></li>
+                            <li><a href="#">Examples</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="bottom-nav-items"><a href="#">About CSS</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Intro to CSS</a></li>
+                                <li><a href="#">CSS2 vs CSS#</a></li>
+                                <li><a href="#">CSS animation</a></li>
+                                <li><a href="#">CSS Framework</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bottom-nav-items"><a href="#">Web Standard</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Web standard</a></li>
+                                <li><a href="#">W3C</a></li>
+                                <li><a href="#">Current state of HTML5 </a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">Web Accessibility</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Intro to Accessibility</a></li>
+                                <li><a href="#">Understanding of disability</a></li>
+                                <li><a href="#">Laws for disadvantaged</a></li>
+                                <li><a href="#">Quality Mark</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">FAQ</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Ask && Answer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">One to One question</a></li>
+                                <li><a href="#">Web Accessibility</a></li>
+                                <li><a href="#">Web Standard</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="bottom-nav-items"><a href="#">Info</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Open sources</a></li>
+                                <li><a href="#">Image resources</a></li>
+                                <li><a href="#">Web Accessibility</a></li>
+                                <li><a href="#">Web Standard</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="visual">
+        <img src="./images/ani_flower_01.png" alt="first flower" class="first-flower">
+        <img src="./images/ani_flower_02.png" alt="second flower" class="second-flower">
+        <img src="./images/ani_flower_03.png" alt="third flower" class="third-flower">
+        <img src="./images/ani_flower_04.png" alt="fourth flower" class="fourth-flower">
+        <p>Web Standards & Accessibility</p> 
+    </div>
+    <main>
+        <section class="first-main-section">
+            <div class="sign-in">
+                <div class="title">Sign In</div>
+                <form class="input-area">
+                    <fieldset>
+                        <div class="input-fields">
+                            <div class="form-field-id">
+                                <label for="id">ID</label>
+                                <input type="text" id="id">
+                            </div>
+                            <div class="form-field-pw">
+                                <label for="password">PW</label>
+                                <input type="text" id="password">
+                            </div>
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </fieldset>
+                </form>
+                <div class="sign-up-forget-pw-box">
+                    <div class="sign-up"><a href="#">Sign Up</a></div>
+                    <div class="forget-pw"><a href="#">Forget Password</a></div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="link-to-markup-validation">
+                    <a href="#">W3C Markup Validation</a>
+                </div>
+                <div class="css-validation-service">
+                    <a href="#">CSS Validation Service</a>
+                </div>
+            </div>
+            <div class="info-display">
+                <div class="title">WEB Terms</div>
+                <div class="description">
+                    <img src="./images/web_standards.gif" alt="Web standard logo">
+                    <div class="text-group">
+                        <p>What is Web standard?</p>
+                        <p>W3C is .....</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-main-section">
+            <div class="search-section">
+                <form action="#">
+                    <label for="search">Search</label>
+                    <input type="text" name="search" placeholder="Please input your ..." id="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="info-section">
+                <div class="top">
+                    <p class="click">FAQ</p>
+                    <p>Resources</p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <ul class="faq-items">
+                        <li class="item1">Lorem ipsu<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsu quae!<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                    </ul>
+                    <ul class="resources">
+                        <li class="item1">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news-section">
+                <div class="top">
+                    <p>News</p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <div class="left">
+                        <img src="./images/news.gif" alt="news image">
+                        <p>W3C Menual</p>
+                    </div>
+                    <div class="right">
+                        <p>W3C site is newly built</p>
+                        <p>2018.05.31</p>
+                        <p>em quo perferendis provident beatae. Explicabo tempora sit natus po.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thrid-main-section">
+            <div class="new-event-section">
+                <div class="top">
+                    <p>New <span>Events</span></p>
+                    <img src="./images/back_forward.png" alt="">
+                </div>
+                <div class="body">
+                    <img src="./images/free_gift.gif" alt="free gift image">
+                    <p>Web Standard Guide 2!!!!</p>
+                    <p>Free for the first 500 people.</p>
+                </div>
+                <div class="bottom">
+                    <label for="related-sites" class="title">Related sites</label>
+                    <select name="related-sites" id="related-sites">
+                        <option value="Multi Campus">Multi Campus</option>
+                        <option value="W3C">W3C</option>
+                        <option value="CSS ZenGarden">CSS ZenGarden</option>
+                        <option value="Web Accessiblity Research">Web Accessiblity Research</option>
+                        <option value="Web Standards">Web Standards</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popular-sites-section">
+                <div class="top">
+                    <p>Popular<span>News</span></p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>W3C</li>
+                        <li>CSS Zen Garden</li>
+                        <li>MDN</li>
+                        <li>Web Standards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="slogan">
+        <img src="./images/coffee.png" alt="coffee image">
+        <p><span>"</span>The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect. Tim Berners - Lee , W3C Director and inventor of the World Wide Web</p>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <img src="./images/footer_logo.png" alt="footer logo" class="footer-logo">
+            <ul>
+                <li class="footer-nav-items"><a href="#">About Us</a></li>
+                <li class="footer-nav-items"><a href="#">Privacy</a></li>
+                <li class="footer-nav-items"><a href="#">Ban Collection Email Address</a></li>
+                <li class="footer-nav-items"><a href="#">Contact Us</a></li>
+                <li class="footer-nav-items"><a href="#">Site Map</a></li>
+            </ul>
+            <div class="img-group">
+                <img src="./images/html5_logo.png" alt="HTML5 logo">
+                <img src="./images/css3_logo.png" alt="CSS logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>서울시 강남구 역삼동 718-5 전화 : 02-3429-5114 email : seulbinim@gmail.com</p>
+            <p>Copyright since © 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>
