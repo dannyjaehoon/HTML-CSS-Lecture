@@ -65,7 +65,7 @@ body {
     background: lime;
 }
 .main {
-    background: skyblue;
+    background: #fff;
 }
 .slogan {
     background: orange;
@@ -134,6 +134,7 @@ body {
     height: 47px;
     border-radius: 0 0 5px 5px;
     border-top: 2px solid black;
+    
 }
 .menu-item {
     position: relative;
@@ -275,6 +276,7 @@ body {
     padding: 30px;
     /* overflow: hidden; */
     /* min-height: 450px; */
+    height: 500px;
 }
 .clearfix::after {
     content: "";
@@ -289,49 +291,52 @@ body {
     width: 250px;
     margin-right: 15px;
 }
-.main .group1 section .login {
+.login {
     background: radial-gradient(circle at right top, #e8852e, #ed552f);
-    box-shadow: 5px 5px 0 #aaa;
+    box-shadow: 5px 5px 0 0 #aaa;
     border-radius: 5px;
     padding: 10px;
 }
 
-.main .group1 section .login h2 {
+.login-heading {
     color: #ff0;
     margin:0;
     text-indent: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
-.main .group1 section .login .login-form {
+.login-form {
     background: #fff;
     margin-top: 10px;
     border-radius: 5px 5px 0 0;
     padding: 10px 10px 0 10px;
     position: relative;
 }
-.main .group1 section .login .login-form .input-group{
+.login-form .input-group{
     padding: 10px 0;
     border:0;
     border-bottom: 1px solid black;
 }
-.main .group1 section .login .login-form .form-field-group{
+.login-form .form-field-group{
     display: flex;
     margin: 0;
+    vertical-align: middle;
+    /* inline elements vertically centered */
 }
-.main .group1 section .login .login-form .input-group .form-field-group:nth-child(2) label{
+.login-form .input-group .form-field-group:nth-child(2) label{
     margin-right: 13px;
 }
-.main .group1 section .login .login-form .input-group .form-field-group:nth-child(3){
-
+.login-form .input-group .form-field-group:nth-child(3){
     margin-top: 5px;
 }
-.main .group1 section .login .login-form .form-field-group input{
+.login-form .form-field-group input{
     display: flex;
     margin-left: 4px;
     width: 90px;
 }
 
-.main .group1 section .login .login-form button{
+.login-form button{
     position: absolute;
     top:20px;
     right: 10px;
@@ -340,8 +345,9 @@ body {
     padding: 17px 10px;
     margin-left: 5px;
     border-radius: 5px;
+    font-size: 1em;
 }
-.main .group1 section .login .remember {
+.login .remember {
     background: #fff;
     border-radius: 0 0 5px 5px;
     display: flex;
@@ -350,24 +356,54 @@ body {
     margin-top: 0;
     padding: 10px 10px;
 }
-.main .group1 section .login .remember li a{
+.login .remember li a{
     color: black;
     text-decoration: none;
     font-size: 13px; 
 }
+
+/* validation */
+
+.validation__pagelist {
+    padding: 0;
+    margin-top: 25px;
+}
+.validation__linkBtn {
+    
+    list-style-type: none;
+
+}
+.validation__linkBtn:last-child{
+    margin-top: 10px;
+}
+.validation__linkBtn a {
+    background: url('./images/validation_icon.png') no-repeat 10px 5px, linear-gradient(to bottom, #ccc, #eee);;
+    color: black;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 30px;;
+    border: 1px solid #aaa;
+    text-decoration: none;
+    width: 100%;
+}
+.validation__linkBtn a:hover {
+    color: #ed552f;
+}
 .main .group1 section .login .remember li span {
     color: tomato
 }
+
+
+
 .main .group2 {
     float: left;
     width: 380px;
     margin: 0 15px;
-    background-color: blueviolet;
 }
 .main .group3 {
     float: right;
     width: 190px;
-    background-color: yellow;
+
 }
 
 
