@@ -276,7 +276,7 @@ body {
     padding: 30px;
     /* overflow: hidden; */
     /* min-height: 450px; */
-    height: 500px;
+    height: 700px;
 }
 .clearfix::after {
     content: "";
@@ -369,15 +369,13 @@ body {
     margin-top: 25px;
 }
 .validation__linkBtn {
-    
     list-style-type: none;
-
 }
 .validation__linkBtn:last-child{
     margin-top: 10px;
 }
 .validation__linkBtn a {
-    background: url('./images/validation_icon.png') no-repeat 10px 5px, linear-gradient(to bottom, #ccc, #eee);;
+    background: url('./images/validation_icon.png') no-repeat 10px 5px, linear-gradient(to bottom, #ccc, #eee);
     color: black;
     display: inline-block;
     padding: 5px 30px;
@@ -393,8 +391,32 @@ body {
     color: tomato
 }
 
-
-
+/* term */
+.term  {
+    background: linear-gradient(to bottom, #ccc, #eee);
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+.term .term-heading{
+    margin-top: 0;
+    font-size: 14px;
+}
+.term-description {
+    display: flex;
+}
+.term-description img {
+    height: 68px;
+}
+.term-text {
+    margin-left: 10px;
+}
+.term-text p {
+    margin-top: 5px;;
+}
+.term-text a{
+    text-decoration: none;
+}
 .main .group2 {
     float: left;
     width: 380px;
