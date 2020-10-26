@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Cafe - static layout</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading readable-hidden"><a href="#" >웹 카페</a></h1>
+        <nav>
+            <div class="nav-top">
+                <ul class="nav-top__list">
+                    <li class="nav-top__list-item"><a href="#">홈</a><span class="divider" aria-hidden="true">:</span></li>
+                    <li class="nav-top__list-item"><a href="#">로그인</a><span class="divider" aria-hidden="true">:</span></li>
+                    <li class="nav-top__list-item"><a href="#">회원가입</a><span class="divider" aria-hidden="true">:</span></li>
+                    <li class="nav-top__list-item"><a href="#">사이트맵</a><span class="divider" aria-hidden="true">:</span></li>
+                    <li class="nav-top__list-item text--uppercase"><a href="#">english</a></li>
+                </ul>
+            </div>
+            <div class="nav-bottom">
+                <img src="./images/logo.png" alt="web cafe logo">
+                <ul class="nav-bottom__menu-list">
+                    <li class="nav-bottom__menu-list-item menu-active">
+                        <button type="button" class="nav-bottom__menu-list__btn">HTML에 대해</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">HTML5 소개</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">래퍼런스 소개</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">활용예제</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-bottom__menu-list-item">
+                        <button type="button" class="nav-bottom__menu-list__btn">CSS에 대해서</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">CSS 소개</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">CSS2 VS CSS3</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">CSS 애니메이션</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">CSS Framework</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-bottom__menu-list-item">
+                        <button type="button" class="nav-bottom__menu-list__btn">웹표준</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹표준 이란?</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">W3C</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">HTML5의 현재와 </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-bottom__menu-list-item">
+                        <button type="button" class="nav-bottom__menu-list__btn">웹 접근성</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹 접근성의 개요</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">장애 환경의 </a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">장차법</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹 접근성 품질 마크</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-bottom__menu-list-item">
+                        <button type="button" class="nav-bottom__menu-list__btn">묻고 답하기</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">묻고 답하기</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">FAQ</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">1대1질문</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹표준</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹 접근성</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-bottom__menu-list-item">
+                        <button type="button" class="nav-bottom__menu-list__btn">자료실</button>
+                        <ul class="nav-bottom__sub-menu-list">
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">공개 자료실</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">이미지 자료실</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹표준 자료실</a></li>
+                            <li class="nav-bottom__sub-menu-list-item"><a href="#">웹 접근성 자료실</a>>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article class="visual">
+        <h2 class="visual__heading">비주얼</h2>
+        <p>Web Standards & Accessibility</p>
+    </article>
+    <main>
+        <section class="first-section">
+            <h2 class="first-section__heading">첫번째 메인 컨탠츠 모음</h2>
+            <section class="login">
+                <h3 class="login__heading">로그인</h3>
+                <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="login__form">
+                    <fieldset>
+                        <legend>회원 로그인 폼</legend>
+                        <div class="logo__form-group">
+                            <label for="userEmail">아이디</label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="이메일 주소" required>
+                        </div>
+                        <div class="logo__form-group">
+                            <label for="userPassword">비밀번호</label>
+                            <input type="password" name="userPassword" id="userPassword" placeholder="8자리 이상" required>
+                        </div>
+                        <button type="submit">로그인</button>
+                    </fieldset>
+                </form>
+                <ul class="login__member">
+                    <li><span class="icon-right-open"></span><a href="#">회원가입</a></li>
+                    <li><span class="icon-right-open"></span><a href="#">아이디/비밀번호 찾기</a></li>
+                </ul>
+            </section>
+            <section class="validation-links">
+                <h3 class="validation-links__heading">유효성 검사</h3>
+                <ul class="validation-links__list">
+                    <li class="validation-links__list-item"><a href="#">W3C Markup Validation</a></li>
+                    <li class="validation-links__list-item"><a href="#">CSS Validation Service</a></li>
+                </ul>
+            </section>
+            <section class="web-accessibility-term">
+                <h3 class="web-accessibility-term__heading">웹 관련 용어</h3>
+                <dl class="web-accessibility-term__list">
+                    <dt class="web-accessibility-term__list-subject"></dt>
+                    <dd class="web-accessibility-term__list-thumbnail"><img src="./images/web_standards.gif" alt="W3C logo"></dd>
+                    <dd class="web-accessibility-term__list-brief-desc">
+                        W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+                    </dd>
+                </dl>
+            </section>
+        </section>
+        <section class="second-section">
+            <h2 class="second-section__heading">두번째 메인 컨탠츠 모음</h2>
+            <section class="search">
+                <h3 class="search__heading">자료검색</h3>
+                <form action="#" method="GET" class="search__form">
+                    <fieldset>
+                        <legend>자료검색</legend>
+                        <label for="search">자료검색</label>
+                        <input type="search" name="search" id="search" placeholder="검색어를 입력하세요" required>
+                        <button type="submit" class="search__btn">검색</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="dashboard">
+                <h3 class="dashboard__heading">데쉬보드</h3>
+                <ul class="dashboard__notice-list">
+                    <li class="dashboard__notice-list-item">HTML의 모든 것을 알려주마 샘플 활용법<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">W3C 사이트 리뉴얼 및 공지사항<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">KWCAG 2.1 소식<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">서버 점검으로 인한 사이트 이용안내 입니다.<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.<span>2018.05.31</span></li>
+                </ul>
+                <ul class="dashboard__resource-list">
+                    <li class="dashboard__resource-list-item">디자인 사이트 링크 모음<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">웹 접근성 관련 자료 모음<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">예제 샘플 응용해보기<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">웹 접근성 향상을위한 국가 표준 기술 가이드라인<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">로얄티 프리 이미지 자료<span>2018.05.31</span></li>
+                </ul>
+                <button type="button" class="dashboard__btn">더보기</button>
+            </section>
+            <section class="news">
+                <h3 class="dashboard__heading">새소식</h3>
+                <h4 class="dashboard__subheading">W3C 사이트가 리뉴얼 되었습니다</h4>
+                <span>2018.05.31</span>
+                <p class="news-description">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 
+                    기존보다 최신 정보 및 개발자를 위한 기술 가이드도 
+                    찾기 쉽도록 구성되어 있습니다.
+                </p>
+                <figure class="news-thumbnail">
+                    <img src="./images/news.gif" alt="W3C Manual">
+                    <figcaption>W3C 리뉴얼</figcaption>  
+                </figure>  
+            </section>
+        </section>
+        <section class="third-section">
+            <h2 class="third-section__heading">세번째 메인 컨탠츠 모음</h2>
+            <section class="new-event">
+                <h3 class="new-event__heading">신규 <span>이벤트</span></h3>
+                <img src="./css/images/backpage_forwardpage.png" alt="previous next buttons" class="new-event__next-previous-btn">
+                <div class="new-event__content">
+                    <p>웹표준 핵심 가이드북 2 출시!<br> 
+                        선착순 500명 한정으로 증정.
+                    </p>
+                </div>
+            </section>
+            <section class="related-sites">
+                <h3 class="related-sites__heading">관련<span>사이트</span></h3>
+                <ul class="related-list">
+                    <li><a href="#">멀티캠퍼스</a></li>
+                    <li><a href="#">W3C</a></li>
+                    <li><a href="#">CSS ZenGarden</a></li>
+                    <li><a href="#">웹접근성 연구소</a></li>
+                    <li><a href="#">Web Standards</a></li>
+                </ul>
+            </section>
+            <section class="popular-sites">
+                <h3 class="popular-sites__heading">인기<span>사이트</span></h3>
+                <ul class="popular-sites__list">
+                    <li class="popular-sites__list-item">W3C</li>
+                    <li class="popular-sites__list-item">CSS Zen Garden</li>
+                    <li class="popular-sites__list-item">MDN</li>
+                    <li class="popular-sites__list-item">Web Standards</li>
+                </ul>
+                <button type="button" class="popular-sites__btn">더보기</button>
+            </section>
+        </section>
+    </main>
+    <article class="slogan">
+        <h2 class="slogan__heading">슬로건</h2>
+        <img src="./css/images/coffee.png" alt="coffee logo" class="slogan__thumbnail">
+        <p class="slogan-description">
+            <q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>
+            Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+        </p>
+    </article>
+    <footer>
+        <h2 class="footer__heading">푸터</h2>
+        <div class="footer-wrapper">
+            <img src="./images/footer_logo.png" alt="footer logo" class="footer-wrapper__logo">
+            <ul class="footer-wrapper__menu-list">
+                <li class="footer-wrapper__menu-list-item"><a href="#">회사소개</a></li>
+                <li class="footer-wrapper__menu-list-item"><a href="#">개인정보 보호정책</a></li>
+                <li class="footer-wrapper__menu-list-item"><a href="#">이메일주소 무단수집 거부</a></li>
+                <li class="footer-wrapper__menu-list-item"><a href="#">contact us</a></li>
+                <li class="footer-wrapper__menu-list-item"><a href="#">site map</a></li>
+            </ul>
+            <div class="footer-wrapper__right-side-logos">
+                <img src="./images/html5_logo.png" alt="html logo">
+                <img src="./images/css3_logo.png" alt="css3 logo">
+            </div>
+            <address class="footer-wrapper__address-wrapper">
+                <span>서울시 강남구 역삼동 718-5</span>
+                <span>전화 : 02-3429-5114</span>
+                <span>email : seulbinim@gmail.com</span>
+            </address>
+            <p class="footer-wrapper__copyright">
+                Copyright since © 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+
+    <!-- <div class="visual">
+        <img src="./css/images/ani_flower_01.png" alt="first flower" class="first-flower">
+        <img src="./css/images/ani_flower_02.png" alt="second flower" class="second-flower">
+        <img src="./css/images/ani_flower_03.png" alt="third flower" class="third-flower">
+        <img src="./css/images/ani_flower_04.png" alt="fourth flower" class="fourth-flower">
+        <p>Web Standards & Accessibility</p> 
+    </div> -->
+    <!-- <main>
+        <section class="first-main-section">
+            <div class="sign-in">
+                <div class="title">Sign In</div>
+                <form class="input-area">
+                    <fieldset>
+                        <div class="input-fields">
+                            <div class="form-field-id">
+                                <label for="id">ID</label>
+                                <input type="text" id="id">
+                            </div>
+                            <div class="form-field-pw">
+                                <label for="password">PW</label>
+                                <input type="text" id="password">
+                            </div>
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </fieldset>
+                </form>
+                <div class="sign-up-forget-pw-box">
+                    <div class="sign-up"><a href="#">Sign Up</a></div>
+                    <div class="forget-pw"><a href="#">Forget Password</a></div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="link-to-markup-validation">
+                    <a href="#">W3C Markup Validation</a>
+                </div>
+                <div class="css-validation-service">
+                    <a href="#">CSS Validation Service</a>
+                </div>
+            </div>
+            <div class="info-display">
+                <div class="title">WEB Terms</div>
+                <div class="description">
+                    <img src="./images/web_standards.gif" alt="Web standard logo">
+                    <div class="text-group">
+                        <p>What is Web standard?</p>
+                        <p>W3C is .....</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-main-section">
+            <div class="search-section">
+                <form action="#">
+                    <label for="search">Search</label>
+                    <input type="text" name="search" placeholder="Please input your ..." id="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="info-section">
+                <div class="top">
+                    <p class="click">FAQ</p>
+                    <p>Resources</p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <ul class="faq-items">
+                        <li class="item1">Lorem ipsu<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsu quae!<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                    </ul>
+                    <ul class="resources">
+                        <li class="item1">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item2">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item3">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item4">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                        <li class="item5">Lorem ipsuam, cum?<p>2018.05.31</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news-section">
+                <div class="top">
+                    <p>News</p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <div class="left">
+                        <img src="./images/news.gif" alt="news image">
+                        <p>W3C Menual</p>
+                    </div>
+                    <div class="right">
+                        <p>W3C site is newly built</p>
+                        <p>2018.05.31</p>
+                        <p>em quo perferendis provident beatae. Explicabo tempora sit natus po.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thrid-main-section">
+            <div class="new-event-section">
+                <div class="top">
+                    <p>New <span>Events</span></p>
+                    <img src="./css/images/back_forward.png" alt="">
+                </div>
+                <div class="body">
+                    <img src="./images/free_gift.gif" alt="free gift image">
+                    <p>Web Standard Guide 2!!!!</p>
+                    <p>Free for the first 500 people.</p>
+                </div>
+                <div class="bottom">
+                    <label for="related-sites" class="title">Related sites</label>
+                    <select name="related-sites" id="related-sites">
+                        <option value="Multi Campus">Multi Campus</option>
+                        <option value="W3C">W3C</option>
+                        <option value="CSS ZenGarden">CSS ZenGarden</option>
+                        <option value="Web Accessiblity Research">Web Accessiblity Research</option>
+                        <option value="Web Standards">Web Standards</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popular-sites-section">
+                <div class="top">
+                    <p>Popular<span>News</span></p>
+                    <p>More</p>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>W3C</li>
+                        <li>CSS Zen Garden</li>
+                        <li>MDN</li>
+                        <li>Web Standards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="slogan">
+        <img src="/css/images/coffee.png" alt="coffee image">
+        <p><span>"</span>The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect. Tim Berners - Lee , W3C Director and inventor of the World Wide Web</p>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <img src="./images/footer_logo.png" alt="footer logo" class="footer-logo">
+            <ul>
+                <li class="footer-nav-items"><a href="#">About Us</a></li>
+                <li class="footer-nav-items"><a href="#">Privacy</a></li>
+                <li class="footer-nav-items"><a href="#">Ban Collection Email Address</a></li>
+                <li class="footer-nav-items"><a href="#">Contact Us</a></li>
+                <li class="footer-nav-items"><a href="#">Site Map</a></li>
+            </ul>
+            <div class="img-group">
+                <img src="./images/html5_logo.png" alt="HTML5 logo">
+                <img src="./images/css3_logo.png" alt="CSS logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>서울시 강남구 역삼동 718-5 전화 : 02-3429-5114 email : seulbinim@gmail.com</p>
+            <p>Copyright since © 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer> -->
+</body>
+</html>

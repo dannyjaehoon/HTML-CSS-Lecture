@@ -26,12 +26,12 @@
 .clearfix::after {
     content:"";
     clear:both;
+    display: block;
 }
 
 /* element -> computed -> search "font-size" -> 16px */
 html {
     font-size: 10px;
-    
 }
 
 /*
