@@ -84,115 +84,121 @@
         <p>Web Standards & Accessibility</p>
     </article>
     <main>
-        <section class="login">
-            <h2 class="login__heading">로그인</h2>
-            <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="login__form">
-                <fieldset>
-                    <legend>회원 로그인 폼</legend>
-                    <div class="logo__form-group">
-                        <label for="userEmail">아이디</label>
-                        <input type="email" name="userEmail" id="userEmail" placeholder="이메일 주소" required>
-                    </div>
-                    <div class="logo__form-group">
-                        <label for="userPassword">비밀번호</label>
-                        <input type="password" name="userPassword" id="userPassword" placeholder="8자리 이상" required>
-                    </div>
-                    <button type="submenumit">로그인</button>
-                </fieldset>
-            </form>
-            <ul class="login__member">
-                <li><span class="icon-right-open"></span><a href="#">회원가입</a></li>
-                <li><span class="icon-right-open"></span><a href="#">아이디/비밀번호 찾기</a></li>
-            </ul>
-        </section>
-        <section class="validation-links">
-            <h2 class="validation-links__heading">유효성 검사</h2>
-            <ul class="validation-links__list">
-                <li class="validation-links__list-item"><a href="#">W3C Markup Validation</a></li>
-                <li class="validation-links__list-item"><a href="#">CSS Validation Service</a></li>
-            </ul>
-        </section>
-        <section class="web-accessibility-term">
-            <h2 class="web-accessibility-term__heading">웹 관련 용어</h2>
-            <dl class="web-accessibility-term__list">
-                <dt class="web-accessibility-term__list-submenuject"></dt>
-                <dd class="web-accessibility-term__list-thumbnail"><img src="./images/web_standards.gif" alt="W3C logo"></dd>
-                <dd class="web-accessibility-term__list-brief-desc">
-                    W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
-                </dd>
-            </dl>
-        </section>
-        <section class="search">
-            <h2 class="search__heading">자료검색</h2>
-            <form action="#" method="GET" class="search__form">
-                <fieldset>
-                    <legend>자료검색</legend>
-                    <label for="search">자료검색</label>
-                    <input type="search" name="search" id="search" placeholder="검색어를 입력하세요" required>
-                    <button type="submenumit" class="search__btn">검색</button>
-                </fieldset>
-            </form>
-        </section>
-        <section class="dashboard">
-            <h2 class="dashboard__heading">데쉬보드</h2>
-            <ul class="dashboard__notice-list">
-                <li class="dashboard__notice-list-item">HTML의 모든 것을 알려주마 샘플 활용법<span>2018.05.31</span></li>
-                <li class="dashboard__notice-list-item">W3C 사이트 리뉴얼 및 공지사항<span>2018.05.31</span></li>
-                <li class="dashboard__notice-list-item">KWCAG 2.1 소식<span>2018.05.31</span></li>
-                <li class="dashboard__notice-list-item">서버 점검으로 인한 사이트 이용안내 입니다.<span>2018.05.31</span></li>
-                <li class="dashboard__notice-list-item">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.<span>2018.05.31</span></li>
-            </ul>
-            <ul class="dashboard__resource-list">
-                <li class="dashboard__resource-list-item">디자인 사이트 링크 모음<span>2018.05.31</span></li>
-                <li class="dashboard__resource-list-item">웹 접근성 관련 자료 모음<span>2018.05.31</span></li>
-                <li class="dashboard__resource-list-item">예제 샘플 응용해보기<span>2018.05.31</span></li>
-                <li class="dashboard__resource-list-item">웹 접근성 향상을위한 국가 표준 기술 가이드라인<span>2018.05.31</span></li>
-                <li class="dashboard__resource-list-item">로얄티 프리 이미지 자료<span>2018.05.31</span></li>
-            </ul>
-            <button type="button" class="dashboard__btn">더보기</button>
-        </section>
-        <section class="news">
-            <h2 class="dashboard__heading">새소식</h2>
-            <h4 class="dashboard__submenuheading">W3C 사이트가 리뉴얼 되었습니다</h4>
-            <span>2018.05.31</span>
-            <p class="news-description">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 
-                기존보다 최신 정보 및 개발자를 위한 기술 가이드도 
-                찾기 쉽도록 구성되어 있습니다.
-            </p>
-            <figure class="news-thumbnail">
-                <img src="./images/news.gif" alt="W3C Manual">
-                <figcaption>W3C 리뉴얼</figcaption>  
-            </figure>  
-        </section>
-        <section class="new-event">
-            <h2 class="new-event__heading">신규 <span>이벤트</span></h2>
-            <img src="./css/images/backpage_forwardpage.png" alt="previous next buttons" class="new-event__next-previous-btn">
-            <div class="new-event__content">
-                <p>웹표준 핵심 가이드북 2 출시!<br> 
-                    선착순 500명 한정으로 증정.
+        <div class="group">
+            <section class="login">
+                <h2 class="login__heading">로그인</h2>
+                <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="login__form">
+                    <fieldset>
+                        <legend>회원 로그인 폼</legend>
+                        <div class="logo__form-group">
+                            <label for="userEmail">아이디</label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="이메일 주소" required>
+                        </div>
+                        <div class="logo__form-group">
+                            <label for="userPassword">비밀번호</label>
+                            <input type="password" name="userPassword" id="userPassword" placeholder="8자리 이상" required>
+                        </div>
+                        <button type="submenumit">로그인</button>
+                    </fieldset>
+                </form>
+                <ul class="login__member">
+                    <li><span class="icon-right-open"></span><a href="#">회원가입</a></li>
+                    <li><span class="icon-right-open"></span><a href="#">아이디/비밀번호 찾기</a></li>
+                </ul>
+            </section>
+            <section class="validation-links">
+                <h2 class="validation-links__heading">유효성 검사</h2>
+                <ul class="validation-links__list">
+                    <li class="validation-links__list-item"><a href="#">W3C Markup Validation</a></li>
+                    <li class="validation-links__list-item"><a href="#">CSS Validation Service</a></li>
+                </ul>
+            </section>
+            <section class="web-accessibility-term">
+                <h2 class="web-accessibility-term__heading">웹 관련 용어</h2>
+                <dl class="web-accessibility-term__list">
+                    <dt class="web-accessibility-term__list-submenuject"></dt>
+                    <dd class="web-accessibility-term__list-thumbnail"><img src="./images/web_standards.gif" alt="W3C logo"></dd>
+                    <dd class="web-accessibility-term__list-brief-desc">
+                        W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+                    </dd>
+                </dl>
+            </section>
+        </div>
+        <div class="group">
+            <section class="search">
+                <h2 class="search__heading">자료검색</h2>
+                <form action="#" method="GET" class="search__form">
+                    <fieldset>
+                        <legend>자료검색</legend>
+                        <label for="search">자료검색</label>
+                        <input type="search" name="search" id="search" placeholder="검색어를 입력하세요" required>
+                        <button type="submenumit" class="search__btn">검색</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="dashboard">
+                <h2 class="dashboard__heading">데쉬보드</h2>
+                <ul class="dashboard__notice-list">
+                    <li class="dashboard__notice-list-item">HTML의 모든 것을 알려주마 샘플 활용법<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">W3C 사이트 리뉴얼 및 공지사항<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">KWCAG 2.1 소식<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">서버 점검으로 인한 사이트 이용안내 입니다.<span>2018.05.31</span></li>
+                    <li class="dashboard__notice-list-item">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.<span>2018.05.31</span></li>
+                </ul>
+                <ul class="dashboard__resource-list">
+                    <li class="dashboard__resource-list-item">디자인 사이트 링크 모음<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">웹 접근성 관련 자료 모음<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">예제 샘플 응용해보기<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">웹 접근성 향상을위한 국가 표준 기술 가이드라인<span>2018.05.31</span></li>
+                    <li class="dashboard__resource-list-item">로얄티 프리 이미지 자료<span>2018.05.31</span></li>
+                </ul>
+                <button type="button" class="dashboard__btn">더보기</button>
+            </section>
+            <section class="news">
+                <h2 class="dashboard__heading">새소식</h2>
+                <h4 class="dashboard__submenuheading">W3C 사이트가 리뉴얼 되었습니다</h4>
+                <span>2018.05.31</span>
+                <p class="news-description">디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 
+                    기존보다 최신 정보 및 개발자를 위한 기술 가이드도 
+                    찾기 쉽도록 구성되어 있습니다.
                 </p>
-            </div>
-        </section>
-        <section class="related-sites">
-            <h2 class="related-sites__heading">관련<span>사이트</span></h2>
-            <ul class="related-list">
-                <li><a href="#">멀티캠퍼스</a></li>
-                <li><a href="#">W3C</a></li>
-                <li><a href="#">CSS ZenGarden</a></li>
-                <li><a href="#">웹접근성 연구소</a></li>
-                <li><a href="#">Web Standards</a></li>
-            </ul>
-        </section>
-        <section class="popular-sites">
-            <h2 class="popular-sites__heading">인기<span>사이트</span></h2>
-            <ul class="popular-sites__list">
-                <li class="popular-sites__list-item">W3C</li>
-                <li class="popular-sites__list-item">CSS Zen Garden</li>
-                <li class="popular-sites__list-item">MDN</li>
-                <li class="popular-sites__list-item">Web Standards</li>
-            </ul>
-            <button type="button" class="popular-sites__btn">더보기</button>
-        </section>
+                <figure class="news-thumbnail">
+                    <img src="./images/news.gif" alt="W3C Manual">
+                    <figcaption>W3C 리뉴얼</figcaption>  
+                </figure>  
+            </section>
+        </div>
+        <div class="group">
+            <section class="new-event">
+                <h2 class="new-event__heading">신규 <span>이벤트</span></h2>
+                <img src="./css/images/backpage_forwardpage.png" alt="previous next buttons" class="new-event__next-previous-btn">
+                <div class="new-event__content">
+                    <p>웹표준 핵심 가이드북 2 출시!<br> 
+                        선착순 500명 한정으로 증정.
+                    </p>
+                </div>
+            </section>
+            <section class="related-sites">
+                <h2 class="related-sites__heading">관련<span>사이트</span></h2>
+                <ul class="related-list">
+                    <li><a href="#">멀티캠퍼스</a></li>
+                    <li><a href="#">W3C</a></li>
+                    <li><a href="#">CSS ZenGarden</a></li>
+                    <li><a href="#">웹접근성 연구소</a></li>
+                    <li><a href="#">Web Standards</a></li>
+                </ul>
+            </section>
+            <section class="popular-sites">
+                <h2 class="popular-sites__heading">인기<span>사이트</span></h2>
+                <ul class="popular-sites__list">
+                    <li class="popular-sites__list-item">W3C</li>
+                    <li class="popular-sites__list-item">CSS Zen Garden</li>
+                    <li class="popular-sites__list-item">MDN</li>
+                    <li class="popular-sites__list-item">Web Standards</li>
+                </ul>
+                <button type="button" class="popular-sites__btn">더보기</button>
+            </section>
+        </div>
     </main>
     <article class="slogan">
         <h2 class="slogan__heading">슬로건</h2>

@@ -277,6 +277,7 @@ body {
     /* overflow: hidden; */
     /* min-height: 450px; */
     height: 700px;
+    border-radius: 15px;
 }
 .clearfix::after {
     content: "";
@@ -401,21 +402,51 @@ body {
 .term .term-heading{
     margin-top: 0;
     font-size: 14px;
+    font-weight: 700;
 }
-.term-description {
+
+
+.odd {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90px;
 }
-.term-description img {
-    height: 68px;
+.term-list-subject {
+    color: #296897;
+    margin-bottom: 10px;
 }
-.term-text {
+
+.term-list-brief,
+.term-list-subject {
+    margin-left: 10px;
+    width: 150px;
+}
+.term-list-brief {
+    line-height: 1.5;
+}
+
+.term-list-thumbnail {
+    margin: 0 0 0 0;
+    order: -1;
+}
+.term-list-thumbnail img{
+    display: block;
+}
+.even {
+    margin-top: 20px;
+}
+
+.even .term-list-thumbnail {
+    float: right;
     margin-left: 10px;
 }
-.term-text p {
-    margin-top: 5px;;
+.even .term-list-subject {
+    float: left;
 }
-.term-text a{
-    text-decoration: none;
+.even .term-list-brief,
+.even .term-list-subject {
+    margin-left: 0;
 }
 .main .group2 {
     float: left;
