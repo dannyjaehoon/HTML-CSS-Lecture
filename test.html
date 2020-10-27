@@ -5,6 +5,8 @@
     <title>Web Cafe - static layout</title>
     <link rel="stylesheet" href="./css/test.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -136,16 +138,70 @@
                     </fieldset>
                 </form>
             </section>
-            <section class="dashboard">
-                <h2 class="dashboard__heading">데쉬보드</h2>
-                <ul class="dashboard__notice-list">
+            <div class="board">
+                <section class="notice clearfix tab-act">
+                    <h2 class="tab notice-heading" id="noticeHeading">공지사항</h2>
+                    <ul class="notice-list">
+                        <li>
+                            <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">KWCAG 2.1 소식</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="icon-plus notice-more" title="공지사항" aria-labelledby="noticeHeading">더보기</a>
+                </section>
+                <section class="pds clearfix">
+                    <h2 class="tab pds-heading" id="pdsHeading">자료실</h2>
+                    <ul class="pds-list">
+                        <li>
+                            <a href="#">디자인 사이트 링크 모음</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">웹 접근성 관련 자료 모음</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">예제 샘플 응용해보기</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">웹 접근성 향상을위한 국가 표준 기술 가이드라인</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                        <li>
+                            <a href="#">로얄티 프리 이미지 자료</a>
+                            <time datetime="2018-05-31T13:53:45">2018.05.31</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="icon-plus pds-more" title="자료실" aria-labelledby="pdsHeading">더보기</a>
+                </section>
+            </div>
+            <!-- <section class="dashboard">
+                <h2 class="dashboard__heading readable-hidden">데쉬보드</h2>
+                <ul class="dashboard__notice-list"><h3>공지사항</h3>
                     <li class="dashboard__notice-list-item">HTML의 모든 것을 알려주마 샘플 활용법<span>2018.05.31</span></li>
                     <li class="dashboard__notice-list-item">W3C 사이트 리뉴얼 및 공지사항<span>2018.05.31</span></li>
                     <li class="dashboard__notice-list-item">KWCAG 2.1 소식<span>2018.05.31</span></li>
                     <li class="dashboard__notice-list-item">서버 점검으로 인한 사이트 이용안내 입니다.<span>2018.05.31</span></li>
                     <li class="dashboard__notice-list-item">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.<span>2018.05.31</span></li>
                 </ul>
-                <ul class="dashboard__resource-list">
+                <ul class="dashboard__resource-list"><h3>자료신</h3>
                     <li class="dashboard__resource-list-item">디자인 사이트 링크 모음<span>2018.05.31</span></li>
                     <li class="dashboard__resource-list-item">웹 접근성 관련 자료 모음<span>2018.05.31</span></li>
                     <li class="dashboard__resource-list-item">예제 샘플 응용해보기<span>2018.05.31</span></li>
@@ -153,7 +209,7 @@
                     <li class="dashboard__resource-list-item">로얄티 프리 이미지 자료<span>2018.05.31</span></li>
                 </ul>
                 <button type="button" class="dashboard__btn">더보기</button>
-            </section>
+            </section> -->
             <section class="news">
                 <h2 class="news__heading">새소식</h2>
                 <h3 class="news__subheading">W3C 사이트가 리뉴얼 되었습니다<span class="news__time">2018.05.31</span></h3>
@@ -169,25 +225,28 @@
             </section>
         </div>
         <div class="group">
-            <section class="new-event">
-                <h2 class="new-event__heading">신규 <span>이벤트</span></h2>
-                <img src="./css/images/backpage_forwardpage.png" alt="previous next buttons" class="new-event__next-previous-btn">
-                <div class="new-event__content">
-                    <p>웹표준 핵심 가이드북 2 출시!<br> 
-                        선착순 500명 한정으로 증정.
-                    </p>
-                </div>
-            </section>
-            <section class="related-sites">
-                <h2 class="related-sites__heading">관련<span>사이트</span></h2>
-                <ul class="related-list">
-                    <li><a href="#">멀티캠퍼스</a></li>
-                    <li><a href="#">W3C</a></li>
-                    <li><a href="#">CSS ZenGarden</a></li>
-                    <li><a href="#">웹접근성 연구소</a></li>
-                    <li><a href="#">Web Standards</a></li>
-                </ul>
-            </section>
+            <div class="new-event-related-group">
+                <section class="new-event">
+                    <h2 class="new-event__heading">신규<span>이벤트</span></h2>
+                    <img src="./css/images/backpage_forwardpage.png" alt="previous next buttons" class="new-event__next-previous-btn">
+                    <div class="new-event__content">
+                        <img src="./images/free_gift.gif" alt="free gift">
+                        <p>웹표준 핵심 가이드북 2 출시!<br> 
+                            선착순 500명 한정으로 증정.
+                        </p>
+                    </div>
+                </section>
+                <section class="related-sites">
+                    <h2 class="related-sites__heading">관련<span>사이트</span></h2>
+                    <ul class="related-list">
+                        <li><a href="#">멀티캠퍼스</a></li>
+                        <li><a href="#">W3C</a></li>
+                        <li><a href="#">CSS ZenGarden</a></li>
+                        <li><a href="#">웹접근성 연구소</a></li>
+                        <li><a href="#">Web Standards</a></li>
+                    </ul>
+                </section>
+            </div>
             <section class="popular-sites">
                 <h2 class="popular-sites__heading">인기<span>사이트</span></h2>
                 <ul class="popular-sites__list">
@@ -196,7 +255,7 @@
                     <li class="popular-sites__list-item">MDN</li>
                     <li class="popular-sites__list-item">Web Standards</li>
                 </ul>
-                <button type="button" class="popular-sites__btn">더보기</button>
+                <button type="button" class="popular-sites__btn"><span class="icon-plus"></span>더보기</button>
             </section>
         </div>
     </main>
@@ -223,6 +282,7 @@
                 <img src="./images/html5_logo.png" alt="html logo">
                 <img src="./images/css3_logo.png" alt="css3 logo">
             </div>
+
             <address class="footer-wrapper__address-wrapper">
                 <span>서울시 강남구 역삼동 718-5</span>
                 <span>전화 : 02-3429-5114</span>
@@ -233,7 +293,6 @@
             </p>
         </div>
     </footer>
-
     <!-- <div class="visual">
         <img src="./css/images/ani_flower_01.png" alt="first flower" class="first-flower">
         <img src="./css/images/ani_flower_02.png" alt="second flower" class="second-flower">
