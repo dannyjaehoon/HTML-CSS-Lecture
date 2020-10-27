@@ -226,6 +226,7 @@ body {
     animation-name: textAni;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    width: 400px;
 }
 .visual::before,
 .visual::after {
@@ -493,7 +494,7 @@ body {
 .board {
     margin-top: 20px;
     background: yellow;
-    height: 200px;
+
 }
 
 .board,
@@ -527,20 +528,34 @@ body {
     color:hsla(110, 50%, 30%, 1);
 }
 .tab {
-    float:left;
+    /* float:left; */
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+.notice-heading {
+    left:0
+}
+.pds-heading {
+    left:83px;
+} 
 .tab a{
     display: block;
     border-radius: 5px 5px 0 0;
     border: 1px solid #aaa;
     background: #ccc linear-gradient(to bottom, #ccc, #eee);
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 1.4rem;
     font-weight: 400;
     color: #999;
     text-decoration: none;
 }
+.is-active .tab {
+    z-index: 2;
+}
+
 .is-active .tab a {
     color: #ed552f;
     background: transparent;
@@ -551,17 +566,20 @@ body {
     margin: 0;
     list-style-type: none;
     padding-left: 0;
-    position: absolute;
+    padding-top: 40px;
+    /* position: absolute;
     left: 0;
-    top: 45px;
-    background: skyblue;
+    top: 45px; */
+    /* background: skyblue; */
     width: 100%;
+    min-height: 170px;
 }
 .notice-list li,
 .pds-list li {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 10px;
+    
 }
 .notice-list a,
 .pds-list a {
