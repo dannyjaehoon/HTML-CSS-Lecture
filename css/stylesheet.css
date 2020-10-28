@@ -34,6 +34,10 @@ html {
     font-size: 10px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 /*
 body * means that all elements existed under body tag will be selected
 the reason of affecting *::before and *::after 
@@ -493,8 +497,6 @@ body {
 
 .board {
     margin-top: 20px;
-    background: yellow;
-
 }
 
 .board,
@@ -520,7 +522,6 @@ body {
     position: absolute;
     top: -8px;
     right: -8px;
-    background: pink;
     padding: 8px;
 }
 .notice-more::before,
@@ -588,7 +589,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     width: 280px;
-    
+    text-decoration: none;
+    color: black;
 }
 
 /* .board,
@@ -662,6 +664,102 @@ body {
     float: right;
 }
 */
+
+/* news */
+.news {
+    /* background: yellow; */
+    margin-top: 20px;
+    position: relative;
+}
+
+.news::before {
+    content: "";
+    background:  #ccc linear-gradient(to right, #ccc, #fff);
+    position: absolute;
+    top:35px;
+    width: 100%;
+    left: 0;
+    height: 2px;
+}
+.news-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ed552f;
+    margin: 0;
+}
+
+.news-article {
+    margin-top: 35px;
+}
+.news-more {
+    position: absolute;
+    top:-8px;
+    right:-8px;
+    padding: 8px;
+}
+.news-more::before {
+    color: hsla(110, 50%, 30%, 1);
+}
+
+.new-article-link {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'thumbnail subject'
+                         'thumbnail date'
+                         'thumbnail brief';
+
+}
+.news-article-subject {
+    margin: 0;
+    grid-area: subject;
+}
+.news-article-date {
+    grid-area: date;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.news-article-brief {
+    margin: 0;
+    grid-area: brief;
+    line-height: 1.5;
+}
+.news-article-thumbnail {
+    margin: 0;
+    grid-area: thumbnail;
+    text-align: center;
+    margin-right: 18px;
+}
+.news-article-thumbnail img {
+    box-shadow: 0 15px 15px 0 #aaa;
+}
+.news-article-thumbnail figcaption{
+    padding-top: 10px;
+    
+}
+/* .news-article-subject,
+.news-article-date,
+.news-article-brief {
+    float: right;
+    display: flex;
+    width: 250px;
+}
+.news-article-subject {
+    margin-bottom: 0;
+}
+.news-article-thumbnail {
+    margin: 0;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+    top:-40px;
+}
+.news-article-thumbnail {
+    text-align: center;
+}
+.news-article-thumbnail figcaption{
+    margin-top: 5px;
+} */
 
 .main .group3 {
     float: right;
