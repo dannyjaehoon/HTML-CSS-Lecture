@@ -761,6 +761,89 @@ body {
     margin-top: 5px;
 } */
 
+
+/* event and related site */
+
+.gradient-box {
+    background:  #ccc linear-gradient(to bottom, #ccc, #eee);
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.event {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.event__heading {
+    margin:0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.event-thumbnail img {
+    box-shadow: 5px 5px 0 5px #aaa;
+}
+.event-brief {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.event-brief em {
+    font-style: normal;
+}
+
+/* 이것대신에 .btn-prev, btn-next를 대신쓰는게 좋다 밑에 btn-prev에 똑같은 속성을 넣으면 안먹음  */
+.btn-event button {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    text-indent: 10px; 
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+.btn-prev {
+    background: url(./images/backpage_forwardpage.png) no-repeat -2px;
+    right: 25px;
+
+}
+.btn-next {
+    background: url(./images/backpage_forwardpage.png) no-repeat -41px;
+    right: 0;
+}
+.related-heading {
+    margin:0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.related-list {
+    padding-left: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    background: #fff;
+    border-radius: 5px;
+    height: 27px;
+    overflow: hidden;
+}
+.related-list:hover {
+    animation: listAni 0.5s forwards alternate ease-in-out;
+}
+.related-list li {
+    padding: 5px 5px;
+}
+.point-color {
+    color: #ed552f;
+}
+@keyframes listAni {
+    from {
+        height: 27px;
+    }
+    to {
+        height: 130px;
+    }
+}
 .main .group3 {
     float: right;
     width: 190px;
