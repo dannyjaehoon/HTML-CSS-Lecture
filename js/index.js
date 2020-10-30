@@ -1,9 +1,9 @@
 var section = $('.board section');
 var tab = $('.board .tab a');
-// var item = $('.board li');
+var item = $('.board li');
 
 
-// item.addClass('icon-dot-circled');
+item.addClass('icon-dot-circled');
 
 
 tab.click(function (e) {
