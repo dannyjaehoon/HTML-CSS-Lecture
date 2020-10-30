@@ -50,8 +50,7 @@ body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
     color: #181818;
-    background: #aaa;
-    height: 2000px;
+    background: #ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 
 /* skip nav */
@@ -60,25 +59,11 @@ body {
 }
 
 /* layout */
-
-.header {
-    background: yellow;
-    width: 940px;
-}
-.visual {
-    background: lime;
-}
-.main {
-    background: #fff;
-}
-.slogan {
-    background: orange;
-}
-
 .header,
 .visual,
 .main,
-.slogan {
+.slogan,
+.footer-inner {
     width: 940px;
     margin: 0  auto;
     padding: 10px;
@@ -281,7 +266,7 @@ body {
     padding: 30px;
     /* overflow: hidden; */
     /* min-height: 450px; */
-    height: 700px;
+    height: 520px;
     border-radius: 15px;
 }
 .clearfix::after {
@@ -793,7 +778,14 @@ body {
     font-style: normal;
 }
 
-/* 이것대신에 .btn-prev, btn-next를 대신쓰는게 좋다 밑에 btn-prev에 똑같은 속성을 넣으면 안먹음  */
+
+
+.main .group3 {
+    float: right;
+    width: 190px;
+
+}
+/* 이것대신에 .btn-prev, btn-next를 대신쓰는게 좋다 밑에 btn-prev에 똑같은 속성을 넣으면 안먹음 */
 .btn-event button {
     width: 18px;
     height: 18px;
@@ -820,37 +812,127 @@ body {
 }
 .related-list {
     padding-left: 0;
-    padding: 0 10px;
     list-style-type: none;
     background: #fff;
     border-radius: 5px;
     height: 27px;
     overflow: hidden;
+    margin-top: 10px;
+    transition: height 0.4s, padding 0.4s 0.4s;
 }
 .related-list:hover {
-    animation: listAni 0.5s forwards alternate ease-in-out;
+    height: 147px;
+    padding: 10px 0;
+}
+
+.related-list a {
+    display: block;
+    line-height: 20px;
+    padding-left: 20px;
 }
 .related-list li {
-    padding: 5px 5px;
+    padding: 3px 5px 2px 5px;
 }
 .point-color {
     color: #ed552f;
 }
-@keyframes listAni {
-    from {
-        height: 27px;
-    }
-    to {
-        height: 130px;
-    }
+
+/* favourite */
+.favorite {
+    margin-top: 20px;
+    position: relative;
 }
-.main .group3 {
+
+.favorite-heading {
+    margin:0;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.favorite-list {
+    list-style: none;
+    padding: 0;
+    /* counter-reset: my-awesome-counter; */
+}
+.favorite-list li {
+    /* counter-increment: my-awesome-counter; */
+    padding: 4px 5px;
+    counter-increment: number;
+    
+}
+
+.favorite-list li::before{
+    /* content: counter(my-awesome-counter); */
+    content: counter(number);
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #999;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.up,
+.stop,
+.down {
+    white-space: nowrap;
+    text-indent: 20px;
+    /* display: inline-block; */
+    background-image: url(./images/rank.png); 
+    background-repeat: no-repeat;
     float: right;
-    width: 190px;
-
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+.up {
+    background-position: 5px 0%;
+}
+.down {
+    background-position: 5px 100%;
+}
+.stop {
+    background-position: 5px 50%;
+}
+.up {
+    background-position: 5px 0%;
 }
 
-
+.favorite-more::before {
+    color: green;
+}
+.favorite-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* slogan */
+.slogan {
+    position: relative;
+} 
+.slogan-heading {
+    background: url(./images/coffee.png)no-repeat;
+    width: 110px;
+    height: 83px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 120px;
+}
+.slogan-brief {
+    margin: 10px 20px 10px 130px;
+    color:#a09784;
+    line-height: 2;
+}
+.slogan-brief q::before {
+    font-size: 3rem;
+    position: relative;
+    top: 5px;
+}
+.slogan-brief q::after {
+    content:""
+}
 /* footer */
 .footer {
     background: pink;
